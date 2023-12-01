@@ -1,0 +1,17 @@
+*.sh
+*.md
+*.woff
+*.ttf
+.vscode
+.idea
+.husky
+.local
+index.html
+dist
+MuDist
+node_modules
+Dockerfile
+/public
+/docs
+/bin
+/src/assets/aliFont

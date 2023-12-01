@@ -1,0 +1,46 @@
+.ant-layout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    padding: 0 20px 0 3px !important;
+    background: @card-bg !important;
+    border-bottom: 1px solid @border-color-base;
+
+    .header-lf {
+        .logo {
+            width: 250px;
+            height: 58px;
+            padding-left: 20px;
+
+            .logo-img {
+                width: 38px;
+                margin: 0 10px;
+            }
+
+            .logo-text {
+                margin: 0;
+                font-size: 24px;
+                font-weight: bold;
+                color: @text-color;
+                white-space: nowrap;
+            }
+        }
+
+        .collapsed {
+            font-size: 20px;
+            color: @text-color;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+    }
+
+    .header-ri {
+        padding-right: 12px;
+        color: @text-color;
+    }
+
+    .iconfont {
+        color: @text-color;
+    }
+}

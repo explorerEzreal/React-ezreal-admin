@@ -1,0 +1,88 @@
+.login-container {
+    background-image: url('/@/assets/images/login_bg.jpg');
+    background-size: cover;
+
+    .login-box {
+        width: calc(100% - 100px);
+        height: calc(100% - 50px);
+    }
+
+    .login-inner {
+        position: relative;
+        z-index: 2;
+    }
+
+    .login-title {
+        color: @text-color;
+    }
+
+    .login-form-content {
+        width: 420px;
+        padding: 35px 30px 20px;
+        background-color: @card-bg;
+        border: 1px solid @border-color-base;
+        border-radius: 12px;
+        box-shadow: 2px 3px 7px rgb(0 0 0 / 20%) !important;
+
+        .login-forms {
+            margin-top: 28px;
+
+            .login-remeber {
+                margin-bottom: 12px;
+            }
+
+            .login-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+
+        .login-form-title {
+            color: @text-color;
+        }
+    }
+
+    .logo-img {
+        width: 72px;
+        height: 62px;
+        margin-right: 12px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 30px;
+        letter-spacing: 4px;
+        white-space: nowrap;
+    }
+}
+
+.login-bg {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: @mask-bg;
+}
+
+.login-theme {
+    position: fixed !important;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    background-color: #000 !important;
+
+    .iconfont {
+        font-size: 14px;
+        color: #f0d909;
+    }
+
+    .icon-moon {
+        position: absolute;
+        top: -2px;
+        right: 3px;
+    }
+}
