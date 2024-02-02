@@ -34,7 +34,11 @@ const routers: RoutersProps[] = [
 
 function filterAsyncRouter(routes: RoutersProps[], routers: RoutersProps[]) {
   const viteModule = import.meta.glob('/src/page/**')
+  // console.log('----routes----', routes)
   routes.map((route: RoutersProps, index: number) => {
+    console.log('-----route-----', route)
+
+    console.log('-----index-----', index)
     let Module: JSX.Element | any = ''
     const { meta } = route
 
@@ -62,6 +66,7 @@ function filterAsyncRouter(routes: RoutersProps[], routers: RoutersProps[]) {
 function useLazy(routes: RoutersProps[]) {
   const tempRoutes: RoutersProps[] = []
   filterAsyncRouter(routes, tempRoutes)
+  console.log('-----tempRoutes-----', tempRoutes)
   routers.push(...tempRoutes)
   routers.push({
     path: '*',
@@ -71,6 +76,8 @@ function useLazy(routes: RoutersProps[]) {
 
 const Router = () => {
   const routes = useRoutes(routers)
+  // console.log('----routes----', routes)
+
   return routes
 }
 

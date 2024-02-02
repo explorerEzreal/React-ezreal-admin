@@ -3,7 +3,7 @@ import { LoadingOutlined } from '@ant-design/icons'
 const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />
 import { Spin } from 'antd'
 
-const lazyLoad = (Comp: React.LazyExoticComponent<any>): React.ReactNode => (
+const LazyLoad = (Comp: React.LazyExoticComponent<any>): React.ReactNode => (
   <Suspense
     fallback={
       <Spin
@@ -21,4 +21,4 @@ const lazyLoad = (Comp: React.LazyExoticComponent<any>): React.ReactNode => (
   </Suspense>
 )
 
-export default lazyLoad
+export default LazyLoad
