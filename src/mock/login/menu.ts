@@ -192,6 +192,14 @@ export default [
                   meta: {
                     title: '自定义组件'
                   }
+                },
+                {
+                  icon: 'icon-viewgallery',
+                  path: 'calendar',
+                  element: 'components/calendar/index',
+                  meta: {
+                    title: '日历'
+                  }
                 }
               ]
             }

@@ -1,0 +1,44 @@
+.calendar_wrapper {
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 12px;
+
+  .calendar_header {
+    height: 64px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .calendar_container {
+    .week_wrapper {
+      padding: 12px 4px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      .week_item {
+        text-align: right;
+      }
+    }
+
+    .date_wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      .date_item {
+        height: 100px;
+        border-right: 1px solid red;
+        border-top: 1px solid red;
+
+      }
+
+      .date_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
