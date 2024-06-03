@@ -198,7 +198,7 @@ export default [
                   path: 'calendar',
                   element: 'components/calendar/index',
                   meta: {
-                    title: '日历1'
+                    title: '日历'
                   }
                 }
               ]
