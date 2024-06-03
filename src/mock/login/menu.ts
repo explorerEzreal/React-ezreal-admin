@@ -136,6 +136,14 @@ export default [
                   meta: {
                     title: '调度算法'
                   }
+                },
+                {
+                  icon: 'icon-edit',
+                  path: 'table',
+                  element: 'function/table/index',
+                  meta: {
+                    title: '在线表格'
+                  }
                 }
               ]
             }

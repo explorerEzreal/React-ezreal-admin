@@ -1,0 +1,29 @@
+.slider_wrapper {
+  display: flex;
+  .slider_wrapper_content {
+    position: relative;
+    width: auto;
+    height: 8px;
+    display: flex;
+    background: pink;
+
+    > li {
+      width: 64px;
+      border-right: 1px solid red;
+    }
+
+    .box {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgb(222, 184, 135);
+      position: absolute;
+      top: -4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(222, 184, 135, 0.8);
+      }
+    }
+  }
+}
